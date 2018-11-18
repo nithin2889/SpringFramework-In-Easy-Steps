@@ -18,7 +18,7 @@ public class UserController {
 		return modelAndView;
 	}
 	
-	@PostMapping(value="registerUser")
+	@PostMapping(value = "registerUser")
 	public ModelAndView registerUser(@ModelAttribute("user") User user) {
 		System.out.println(user);
 		ModelAndView modelAndView = new ModelAndView();
