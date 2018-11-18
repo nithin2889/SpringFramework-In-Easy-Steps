@@ -10,7 +10,7 @@ public class RequestParamController {
 
 	@RequestMapping("/showData")
 	public ModelAndView showData(@RequestParam("id") int id, @RequestParam("name") String name,
-			@RequestParam(value="sal", required=false, defaultValue="132") double salary) {
+			@RequestParam(value = "sal", required = false, defaultValue = "132") double salary) {
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.setViewName("userReg");
 		return modelAndView;
