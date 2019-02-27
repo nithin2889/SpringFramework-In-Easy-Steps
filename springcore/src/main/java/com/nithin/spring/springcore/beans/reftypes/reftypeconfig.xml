@@ -9,8 +9,11 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<bean name="scores"
-		class="com.nithin.spring.springcore.beans.reftypes.Scores" p:physics="98" p:chemistry="99" p:maths="100" />
-		
-	<bean name="students" class="com.nithin.spring.springcore.beans.reftypes.Students" p:scores-ref="scores" />
+		class="com.nithin.spring.springcore.beans.reftypes.Scores"
+		p:physics="98" p:chemistry="99" p:maths="100" />
+
+	<bean name="students"
+		class="com.nithin.spring.springcore.beans.reftypes.Students"
+		p:scores-ref="scores" />
 
 </beans>
